@@ -1,7 +1,7 @@
 {
-    "version":  "0.0.25",
+    "version":  "0.0.26",
     "url":  "https://github.com/kklidi/BIMSASU-release/releases/latest",
-    "notes":  "첫 공개 배포. DEF Markup, Text List/Edit, Tab Color 등 10개 기능. 업데이트 알림과 About BIMSASU 창 추가.",
+    "notes":  "설치 시 Revit 버전 선택. Revision Manager(시트 위 구름 오류)·Export Schedule(긴 이름·빈 행)·Ceiling Height(3D 뷰 선택)·MultiCopy 개선.",
     "minVersion":  "",
     "minVersionMessage":  ""
 }
