@@ -1,0 +1,7 @@
+{
+    "version":  "0.0.25",
+    "url":  "https://github.com/kklidi/BIMSASU-release/releases/latest",
+    "notes":  "첫 공개 배포. DEF Markup, Text List/Edit, Tab Color 등 10개 기능. 업데이트 알림과 About BIMSASU 창 추가.",
+    "minVersion":  "",
+    "minVersionMessage":  ""
+}
