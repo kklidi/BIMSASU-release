@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BIMSASU 다운로드</title>
+  <meta name="description" content="BIMSASU — Revit 2024~2027용 무료 플러그인 (nosasu)">
+  <style>
+    :root { --bg: #f4f5f7; --surface: #fff; --border: #dde1e6; --text: #1f2328; --muted: #6b7280; --primary: #1f2937; --accent: #ca8a04; }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #111418; --surface: #1a1e24; --border: #2c323b; --text: #e6e8eb; --muted: #9aa3ae; --primary: #e6e8eb; --accent: #eab308; }
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--text); font: 15px/1.65 "Segoe UI", "Malgun Gothic", system-ui, sans-serif; }
+    main { max-width: 760px; margin: 0 auto; padding: 48px 16px 64px; }
+    h1 { font-size: 32px; margin: 0; letter-spacing: -0.5px; }
+    h2 { font-size: 18px; margin: 0 0 8px; }
+    .lead { color: var(--muted); margin: 4px 0 24px; }
+    .card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 20px 22px; margin: 0 0 16px; }
+    .btn { display: inline-block; background: var(--primary); color: var(--bg); text-decoration: none; padding: 10px 20px; border-radius: 8px; font-weight: 600; }
+    .meta { color: var(--muted); font-size: 13px; margin-top: 10px; }
+    ul { margin: 0; padding-left: 20px; }
+    a { color: var(--accent); }
+    footer { color: var(--muted); font-size: 13px; margin-top: 32px; }
+    .brand { display: flex; align-items: center; gap: 14px; margin-bottom: 20px; }
+    .brand img { display: block; border-radius: 12px; }
+    .brand .lead { margin: 2px 0 0; }
+    .banner { display: flex; justify-content: space-between; align-items: center; gap: 12px; text-decoration: none; color: var(--text);
+              background: color-mix(in srgb, var(--accent) 14%, var(--surface)); border: 1px solid var(--accent); border-radius: 10px; padding: 14px 18px; margin: 0 0 16px; }
+    .banner small { color: var(--muted); }
+    .banner .go { color: var(--accent); font-weight: 600; white-space: nowrap; }
+  </style>
+</head>
+<body>
+<main>
+  <header class="brand">
+    <a href="https://nosasu.com"><img src="nosasu-logo.png" width="56" height="56" alt="nosasu"></a>
+    <div>
+      <h1>BIMSASU</h1>
+      <p class="lead">Revit 2024 ~ 2027용 무료 플러그인 · by <a href="https://nosasu.com">nosasu</a></p>
+    </div>
+  </header>
+
+  <a class="banner" href="https://nosasu.com">
+    <span><b>사수 없는 사람 모여!</b><br><small>실무 자료 · 플러그인 · 커뮤니티</small></span>
+    <span class="go">nosasu.com →</span>
+  </a>
+
+  <section class="card">
+    <h2>다운로드</h2>
+    <a class="btn" href="https://github.com/kklidi/BIMSASU-release/releases/latest">최신 버전 받기</a>
+    <p class="meta">
+      <span id="ver">최신 버전 확인 중…</span> · Windows · 관리자 권한 필요 없음<br>
+      설치 전에 Revit을 모두 종료하세요. 처음 실행할 때 "게시자를 확인할 수 없습니다" 창이 나오면 [항상 로드]를 누르세요.
+    </p>
+  </section>
+
+  <section class="card">
+    <h2>주요 기능</h2>
+    <ul>
+      <li><b>DEF Markup</b> — DEF_ 주석을 인쇄·PDF·DWG에서 자동으로 제외</li>
+      <li><b>Text List / Text Edit</b> — 프로젝트의 모든 문자를 표로 보고, 찾아 바꾸고, 엑셀로 내보내기</li>
+      <li><b>Tab Color</b> — 열린 파일마다 뷰 탭 색 구분</li>
+      <li>MultiCopy, A1toA3 Scale, Export Schedule, Revision Manager, Find CAD, Ceiling Height</li>
+    </ul>
+  </section>
+
+  <section class="card" id="license">
+    <h2>라이선스</h2>
+    <ul>
+      <li>무료이며, 개인과 회사(상업적 업무 포함) 모두 사용할 수 있습니다.</li>
+      <li>향후 버전에서 일부 기능이 유료로 바뀔 수 있습니다. 이미 설치한 버전은 계속 사용할 수 있습니다.</li>
+      <li>오픈소스가 아니며 수정·재판매·리버스 엔지니어링은 할 수 없습니다.</li>
+    </ul>
+    <p class="meta">전문: <a href="https://github.com/kklidi/BIMSASU-release/blob/main/LICENSE.md">LICENSE.md</a></p>
+  </section>
+
+  <section class="card" id="privacy">
+    <h2>개인정보와 업데이트 확인</h2>
+    <ul>
+      <li>BIMSASU는 Revit을 시작할 때 하루 한 번 이 사이트의 <code>latest.json</code>을 읽어 새 버전이 있는지 확인합니다.</li>
+      <li>이 과정에서 이름·이메일·PC 정보·사용 기록을 보내지 않으며, nosasu는 사용자를 식별하는 정보를 수집·저장하지 않습니다.</li>
+      <li>이 사이트는 GitHub가 운영하는 서버(GitHub Pages)에서 제공되며, 접속 시 IP 주소 등은
+        <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub 개인정보 처리방침</a>에 따라 처리됩니다.</li>
+      <li>자동 확인은 리본의 <b>About BIMSASU</b>에서 끌 수 있습니다.</li>
+    </ul>
+  </section>
+
+  <footer>
+    문의: <a href="https://nosasu.com">nosasu.com</a> · <a href="mailto:manager@nosasu.com">manager@nosasu.com</a><br>
+    Copyright © 2026 nosasu.com. Autodesk와 Revit은 Autodesk, Inc.의 상표이며, BIMSASU는 Autodesk와 관계없습니다.
+  </footer>
+</main>
+<script>
+  fetch('latest.json', { cache: 'no-store' })
+    .then(function (r) { return r.ok ? r.json() : null; })
+    .then(function (j) { document.getElementById('ver').textContent = j && j.version ? '버전 ' + j.version : 'Revit 2024 ~ 2027'; })
+    .catch(function () { document.getElementById('ver').textContent = 'Revit 2024 ~ 2027'; });
+</script>
+</body>
+</html>
