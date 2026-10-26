@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>BIMSASU</title>
-  <meta name="description" content="BIMSASU — Revit 2024~2027용 플러그인 (nosasu). 첫 공개 배포를 준비하고 있습니다.">
+  <title>BIMSASU 다운로드</title>
+  <meta name="description" content="BIMSASU — Revit 2024~2027용 무료 플러그인 (nosasu)">
   <style>
-    :root { --bg: #f4f5f7; --surface: #fff; --border: #dde1e6; --text: #1f2328; --muted: #6b7280; --accent: #ca8a04; }
+    :root { --bg: #f4f5f7; --surface: #fff; --border: #dde1e6; --text: #1f2328; --muted: #6b7280; --primary: #1f2937; --accent: #ca8a04; }
     @media (prefers-color-scheme: dark) {
-      :root { --bg: #111418; --surface: #1a1e24; --border: #2c323b; --text: #e6e8eb; --muted: #9aa3ae; --accent: #eab308; }
+      :root { --bg: #111418; --surface: #1a1e24; --border: #2c323b; --text: #e6e8eb; --muted: #9aa3ae; --primary: #e6e8eb; --accent: #eab308; }
     }
     * { box-sizing: border-box; }
     body { margin: 0; background: var(--bg); color: var(--text); font: 15px/1.65 "Segoe UI", "Malgun Gothic", system-ui, sans-serif; }
@@ -17,9 +17,9 @@
     h2 { font-size: 18px; margin: 0 0 8px; }
     .lead { color: var(--muted); margin: 4px 0 24px; }
     .card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 20px 22px; margin: 0 0 16px; }
-    .card p { margin: 0; }
-    .card p + p { margin-top: 8px; }
-    .muted { color: var(--muted); }
+    .btn { display: inline-block; background: var(--primary); color: var(--bg); text-decoration: none; padding: 10px 20px; border-radius: 8px; font-weight: 600; }
+    .meta { color: var(--muted); font-size: 13px; margin-top: 10px; }
+    ul { margin: 0; padding-left: 20px; }
     a { color: var(--accent); }
     footer { color: var(--muted); font-size: 13px; margin-top: 32px; }
     .brand { display: flex; align-items: center; gap: 14px; margin-bottom: 20px; }
@@ -37,7 +37,7 @@
     <a href="https://nosasu.com"><img src="nosasu-logo.png" width="56" height="56" alt="nosasu"></a>
     <div>
       <h1>BIMSASU</h1>
-      <p class="lead">Revit 2024 ~ 2027용 플러그인 · by <a href="https://nosasu.com">nosasu</a></p>
+      <p class="lead">Revit 2024 ~ 2027용 무료 플러그인 · by <a href="https://nosasu.com">nosasu</a></p>
     </div>
   </header>
 
@@ -47,9 +47,62 @@
   </a>
 
   <section class="card">
-    <h2>준비 중입니다</h2>
-    <p>BIMSASU는 첫 공개 배포를 준비하고 있습니다. 공개되면 이 페이지에서 설치 프로그램을 받을 수 있습니다.</p>
-    <p class="muted">소식은 <a href="https://nosasu.com">nosasu.com</a>에서 알려 드립니다.</p>
+    <h2>다운로드</h2>
+    <a class="btn" href="https://github.com/kklidi/BIMSASU-release/releases/latest">최신 버전 받기</a>
+    <p class="meta">
+      <span id="ver">최신 버전 확인 중…</span> · Windows · 관리자 권한 필요 없음<br>
+      설치 전에 Revit을 모두 종료하세요. 설치 화면에서 Revit 버전(2024~2027)을 고릅니다. 수동 설치용 ZIP도 같은 곳에 있습니다.<br>
+      처음 실행할 때 "게시자를 확인할 수 없습니다" 창이 나오면 [항상 로드]를 누르세요. Revit 버전마다 한 번씩 묻습니다.<br>
+      Revit 2027에서 이 창이 뜬 채로 Revit이 꺼지는 경우가 있습니다. 다시 실행해 [항상 로드]를 누르면 다음부터는 묻지 않습니다.
+    </p>
+  </section>
+
+  <section class="card">
+    <h2>주요 기능 (리본 BIMSASU 탭, 22개)</h2>
+    <ul>
+      <li><b>도면</b> — <b>Grid to Crop</b> 그리드·레벨 끝을 자르기 영역에 맞추고 치수 안내선·자동 치수 ·
+        <b>Multi Copy</b> 여러 뷰 한 번에 복제 · <b>Batch Rename</b> 뷰·시트 이름을 규칙으로 한 번에 ·
+        <b>Sheet Sync</b> 엑셀 도면목록으로 시트 만들기·고치기 · <b>A1toA3 Scale</b> 시트에 A1·A3 축척 함께 적기 ·
+        <b>Excel Table</b> 엑셀 표(병합·테두리)를 도면에 · <b>Schedule Colors</b> 일람표 칸을 규칙대로 색칠 · <b>Export Schedule</b> 일람표를 엑셀로</li>
+      <li><b>문자</b> — <b>Text List</b> 모든 문자를 표로 보고 찾아 바꾸기·엑셀 · <b>Text Edit</b> 고른 문자 일괄 수정 ·
+        <b>Font Replace</b> 글꼴 일괄 교체(굴림 → 맑은 고딕)</li>
+      <li><b>검토</b> — <b>Submit Check</b> 제출 전 점검을 한 창에서(축척 표기·임시 문구·덮어쓴 치수·빠진 태그·리비전 구름 등) ·
+        <b>DEF Markup</b> DEF_ 주석을 인쇄·PDF·DWG에서 자동 제외 · <b>Revision Manager</b> 리비전 구름 목록·엑셀 · <b>Revision Colors</b> 리비전 차수별 구름 색</li>
+      <li><b>모델</b> — <b>Room Number</b> 룸 번호를 누르는 순서·위치 순서대로 다시 매기기 · <b>Room Tag Relink</b> '?'가 된 룸 태그 다시 연결 ·
+        <b>Ceiling Height</b> 천장고를 재서 룸에 입력 · <b>Model Cleanup</b> 안 쓰는 뷰·템플릿·필터·패밀리 정리 · <b>Find CAD</b> 링크·삽입 CAD 찾기</li>
+      <li><b>보기</b> — <b>Why Hidden</b> 요소가 왜 안 보이는지 진단하고 바로 고치기 · <b>Tab Color</b> 파일마다 뷰 탭 색 구분</li>
+    </ul>
+    <p class="meta">한 번에 바꾼 것은 Ctrl+Z 한 번으로 되돌아갑니다. 바뀐 점은 <a href="https://github.com/kklidi/BIMSASU-release/releases">릴리스 노트</a>에 있습니다.</p>
+  </section>
+
+  <section class="card" id="license">
+    <h2>라이선스</h2>
+    <ul>
+      <li>무료이며, 개인과 회사(상업적 업무 포함) 모두 사용할 수 있습니다.</li>
+      <li>오픈소스가 아니며 수정·재판매·리버스 엔지니어링은 할 수 없습니다.</li>
+      <li>BIMSASU에는 Revit 모델을 직접 바꾸는 기능이 있습니다. 중요한 작업 전에는 모델을 백업하고 결과를 직접 확인하세요.</li>
+    </ul>
+    <p class="meta">
+      계약 전문(판 1, 2026-10-19 시행): <a href="https://github.com/kklidi/BIMSASU-release/blob/main/LICENSE.md">LICENSE.md</a> ·
+      <a href="https://github.com/kklidi/BIMSASU-release/blob/main/license/README.md">모든 판과 이전 약관</a><br>
+      <a href="https://github.com/kklidi/BIMSASU-release/blob/main/DATA-PRIVACY.md">데이터와 개인정보 안내</a> ·
+      <a href="https://github.com/kklidi/BIMSASU-release/blob/main/KNOWN-ISSUES.md">알려진 문제</a>
+    </p>
+  </section>
+
+  <section class="card" id="privacy">
+    <h2>개인정보와 업데이트 확인</h2>
+    <ul>
+      <li>BIMSASU는 Revit을 켤 때와 켜 둔 동안 몇 시간마다 이 배포 저장소의 업데이트 정보(전자 서명된 <code>feed.json</code>)를 읽어 새 버전과 버전 정책을 확인합니다.
+        새 버전은 기본으로 미리 받아 두었다가 Revit을 모두 닫을 때 설치합니다.</li>
+      <li>이 과정에서 이름·이메일·PC 정보·사용 기록을 보내지 않으며, nosasu는 사용자를 식별하는 정보를 수집·저장하지 않습니다.
+        PC와 모델에 남는 파일까지 적은 글은 <a href="https://github.com/kklidi/BIMSASU-release/blob/main/DATA-PRIVACY.md">데이터와 개인정보 안내</a>에 있습니다.</li>
+      <li>이 사이트와 업데이트 정보·설치 파일은 GitHub가 운영하는 서버에서 제공되며, 접속 시 IP 주소 등은
+        <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub 개인정보 처리방침</a>에 따라 처리됩니다.</li>
+      <li>리본의 <b>About BIMSASU</b>에서 자동으로 설치 / 알림만 / 알리지 않음을 고를 수 있습니다. 버전 정책 확인은 끌 수 없습니다.</li>
+      <li>결과를 틀리게 계산하거나 모델·데이터를 손상시키는 결함·보안 결함을 고친 버전이 나오거나 새 판의 사용 조건으로 옮길 때는,
+        알림 뒤 일정 기간이 지나면 이전 버전의 명령을 쓸 수 없게 될 수 있습니다(라이선스 제5조).</li>
+    </ul>
   </section>
 
   <footer>
@@ -57,5 +110,11 @@
     Copyright © 2026 nosasu.com. Autodesk와 Revit은 Autodesk, Inc.의 상표이며, BIMSASU는 Autodesk와 관계없습니다.
   </footer>
 </main>
+<script>
+  fetch('latest.json', { cache: 'no-store' })
+    .then(function (r) { return r.ok ? r.json() : null; })
+    .then(function (j) { document.getElementById('ver').textContent = j && j.version ? '버전 ' + j.version : 'Revit 2024 ~ 2027'; })
+    .catch(function () { document.getElementById('ver').textContent = 'Revit 2024 ~ 2027'; });
+</script>
 </body>
 </html>
