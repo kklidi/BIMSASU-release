@@ -1,7 +1,7 @@
 {
-    "version":  "0.0.26",
+    "version":  "0.1.0",
     "url":  "https://github.com/kklidi/BIMSASU-release/releases/latest",
-    "notes":  "설치 시 Revit 버전 선택. Revision Manager(시트 위 구름 오류)·Export Schedule(긴 이름·빈 행)·Ceiling Height(3D 뷰 선택)·MultiCopy 개선.",
+    "notes":  "첫 공개 버전입니다. Revit 2024~2027, 도면·문자·검토·모델·보기 22개 기능.",
     "minVersion":  "",
     "minVersionMessage":  ""
 }
